@@ -30,7 +30,7 @@
                         <a href="./evento_up.html">UPCOMING EVENTS</a>
                     </li>
                     <li class="menu_items">
-                        <a href="#">PAST EVENTS</a>
+                        <a href="./evento_ps.html">PAST EVENTS</a>
                     </li>
                     <li class="menu_items">
                         <a href="./contacto.html">CONTACT</a>
@@ -41,64 +41,21 @@
                 </ul>
             </div>
         </nav>
-
-        <div class="titulo_principal">
-            <div class="flecha_izq col-2">
-                <a href="./evento_up.html"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="auto"
-                        fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                    </svg></a>
-            </div>
-
-            <div>
-                <h1 class="col-8">Past Events</h1>
-            </div>
-
-            <div class="flecha_der col-2">
-                <a href="./contacto.html"> <svg xmlns=" http://www.w3.org/2000/svg" width="80" height="auto"
-                        fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                    </svg></a>
+        <div class="evento">
+            <div class="card mb-3" style="max-width: 800px ">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/Museum_Tour.jpg" class="img-fluid" alt="museo">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Titulo</h5>
+                            <p class="card-text">Texto descriptivo<br>Texto descriptivo<br>Texto descriptivo<br></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <form class=" buscar_categoria" action="#">
-            <fieldset class="categorias">
-                <label>
-                    <input type="radio" name="category" value="1" required>
-                    category
-                </label>
-
-                <label>
-                    <input type="radio" name="category" value="2" required>
-                    category
-                </label>
-
-                <label>
-                    <input type="radio" name="category" value="3" required>
-                    category
-                </label>
-                <label>
-                    <input type="radio" name="category" value="4" required>
-                    category
-                </label>
-                <label>
-                    <input type="radio" name="category" value="5" required>
-                    category
-                </label>
-            </fieldset>
-
-            <fieldset class="d-flex buscador">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                        height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                    </svg></button>
-            </fieldset>
-        </form>
-        <div id="tarjetas" class="tarjetas card-body card-title card-text card-link"></div>
     </main>
     <footer>
         <div class="redes col-3">
@@ -130,9 +87,6 @@
             <h2>FE13-TN</h2>
         </div>
     </footer>
-
-    <script src="./data.js"></script>
-    <script src="./evento_ps.js"></script>
 </body>
 
 </html>

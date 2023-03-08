@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
-    <link rel="icon" type="image/x-icon" href="../ap_proyecto2/assets/icon_ae.png">
+    <link rel="icon" type="image/x-icon" href="./assets/icon_ae.png">
     <title>Amazing Events</title>
 </head>
 
@@ -16,24 +16,24 @@
     <main>
         <nav>
             <div class="logo_container col-6">
-                <a href="../ap_proyecto2/index.html">
-                    <img class="imagen_logo" src="../ap_proyecto2/assets/logo_ae.png" alt="logo_amazing_eventes" width="200"
+                <a href="./index.html">
+                    <img class="imagen_logo" src="./assets/logo_ae.png" alt="logo_amazing_eventes" width="200"
                         height="50">
                 </a>
             </div>
             <div class="menu_container col-6">
                 <ul>
                     <li class="menu_items">
-                        <a href="../ap_proyecto2/index.html">HOME</a>
+                        <a href="./index.html">HOME</a>
                     </li>
                     <li class="menu_items">
-                        <a href="../ap_proyecto2/evento_up.html">UPCOMING EVENTS</a>
+                        <a href="./evento_up.html">UPCOMING EVENTS</a>
                     </li>
                     <li class="menu_items">
-                        <a href="../ap_proyecto2/evento_ps.html">PAST EVENTS</a>
+                        <a href="./evento_ps.html">PAST EVENTS</a>
                     </li>
                     <li class="menu_items">
-                        <a href="../ap_proyecto2/contacto.html">CONTACT</a>
+                        <a href="./contacto.html">CONTACT</a>
                     </li>
                     <li class="menu_items">
                         <a href="#">STATS</a>
@@ -44,30 +44,30 @@
 
         <div class="titulo_principal">
             <div class="flecha_izq col-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="auto" fill="currentColor"
-                    class="bi bi-chevron-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                </svg>
+                <a href="./contacto.html"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="auto"
+                        fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg></a>
             </div>
 
             <div>
-                <h1 class="col-8">Stats</h1>
+                <h1 class="col-8">Stast</h1>
             </div>
 
             <div class="flecha_der col-2">
-                <svg xmlns=" http://www.w3.org/2000/svg" width="80" height="auto" fill="currentColor"
-                    class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                </svg>
+                <a href="./index.html"> <svg xmlns=" http://www.w3.org/2000/svg" width="80" height="auto"
+                        fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg></a>
             </div>
         </div>
-        <section>
+        <div class="tabla">
             <table>
                 <thead>
                     <tr>
-                        <th colspan="3">EVENTS</th>
+                        <th class="titulo_stat" colspan="3">Event</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -81,13 +81,11 @@
                         <td> </td>
                         <td> </td>
                     </tr>
-                </tbody>
-                <thead>
+
                     <tr>
-                        <th colspan="3">Upcoming events statistics by category</th>
+                        <td class="titulo_stat" colspan="3">Upcoming events statistics by category</td>
                     </tr>
-                </thead>
-                <tbody>
+
                     <tr>
                         <td>Categories</td>
                         <td>Revenues</td>
@@ -108,13 +106,10 @@
                         <td> </td>
                         <td> </td>
                     </tr>
-                </tbody>
-                <thead>
                     <tr>
-                        <th colspan="3">Past events statistics by category</th>
+                        <td class="titulo_stat" colspan="3">Past events statistics by category</td>
                     </tr>
-                </thead>
-                <tbody>
+
                     <tr>
                         <td>Categories</td>
                         <td>Revenues</td>
@@ -147,7 +142,7 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="redes col-3">

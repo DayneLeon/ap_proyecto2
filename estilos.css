@@ -8,6 +8,7 @@
 nav {
     display: flex;
     background-color: #2E0249;
+    min-height: 15vh;
 }
 
 .logo_container {
@@ -27,7 +28,7 @@ nav {
     justify-content: end;
 }
 
-ul {
+.menu_container ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -41,11 +42,22 @@ ul {
     border: 1px solid white;
     border-radius: 0.5rem;
     padding: 7px;
+    cursor: pointer;
 }
 
 .menu_items a {
     text-decoration: none;
     color: white !important;
+}
+
+
+.menu_items:hover {
+    border: 1px solid #d90367a9;
+    background-color: #d90367a9;
+}
+
+main {
+    min-height: 70vh;
 }
 
 /* ______________titulo________________ */
@@ -64,8 +76,16 @@ ul {
     width: 100%;
 }
 
-.flecha_der{
+.flecha_der {
     text-align: end;
+}
+
+.titulo_principal a {
+    color: white;
+}
+
+svg:hover {
+    color: #d90367a9;
 }
 
 /* _____________formularios_______________ */
@@ -77,14 +97,37 @@ ul {
     padding: 2rem 3rem 2rem 3rem;
 }
 
-label input {
+label {
     margin-left: 50px;
 }
 
-.categorias{
+.categorias {
     font-size: 1.2rem;
 }
 
+.btn-outline-success {
+    --bs-btn-color: #2e0249c6;
+    --bs-btn-border-color: #2e0249c6;
+    --bs-btn-hover-bg: #2e0249c6;
+    --bs-btn-hover-border-color: #2e0249c6;
+    --bs-btn-active-bg: #2e0249c6;
+    --bs-btn-active-border-color: #2e0249c6;
+    --bs-btn-disabled-color: #2e0249c6;
+    --bs-btn-disabled-border-color: #2e0249c6;
+}
+
+.form-control {
+    width: 20rem;
+}
+
+.buscador button {
+    width: 50px;
+}
+
+form {
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 /* ___________________tarjetas_________________ */
 
@@ -93,41 +136,65 @@ label input {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding: 1rem 10rem 1rem 10rem;
 }
 
-.card-title, .card-text, .card-body{
+.card-title,
+.card-text,
+.card-body {
     text-align: center;
 }
 
-.tarjetas .card-body a{
+.tarjetas .card-body a {
     text-decoration: none;
     color: #900445a9;
 }
 
+.tarjetas img {
+    max-height: 133.95px;
+}
+
+.boton_ver {
+    border: 2px solid #900445a9;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.3rem;
+}
+
+.boton_ver:hover {
+    background-color: #900445a9;
+    color: white !important;
+    border: 2px solid white !important;
+}
+
+.card-text p {
+    height: 96px;
+}
+
+.card-body {
+    gap: 1rem;
+}
+
 /* ______________footer_______________ */
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
     background: #2E0249;
     color: white;
+    min-height: 15vh;
 }
 
-.enlace_footer{
+.enlace_footer {
     display: inline-block;
     list-style-type: none;
     margin-top: 0.5rem;
+    margin-right: 25px;
 }
 
-.titulo_secundario{
+.titulo_secundario {
     text-align: end;
     padding-right: 3rem;
-}
-
-main{
-    min-height: 93vh;
 }
 
 footer svg {
@@ -136,45 +203,48 @@ footer svg {
 
 /* ____________________________________________________contacto__________________________________________________ */
 
-.info_contacto{
+.info_contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.5rem;
 }
 
-.info_contacto fieldset{
+.info_contacto fieldset {
     display: flex;
     flex-direction: column;
     margin: 1rem 0 1rem 0;
-    padding: 1rem 6rem  1rem  6rem  ;
+    padding: 1rem 6rem 1rem 6rem;
+    border: 1px solid #2E0249;
 }
 
 .casilla_texto {
     width: 400px;
 }
 
-.mensaje{
+.mensaje {
     height: 100px;
 }
 
-button{
+button {
     width: 100px;
     align-self: flex-end;
     font-size: 1.2rem;
+    color: #d90367a9;
+    background-color: transparent;
 }
 
 /* _____________________________________________evento_________________________________________________ */
 
-.evento{
+.evento {
     height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.evento .card{
-    border: 2px solid black;
+.evento .card {
+    border: 6px solid #d90367a9;
     border-radius: 0;
     padding: 2rem;
     margin-top: 1rem;
@@ -183,15 +253,18 @@ button{
     justify-content: space-around;
 }
 
-.evento img{
-    border: 2px solid black;
+.evento .card img {
+    border: 3px solid #2E0249;
     margin: 2rem 2rem 2rem 0.5rem;
-    height: 400px;
-    width: 400px;
 }
 
-.evento .card-body{
-    border: 2px solid black;
+.img-fluid {
+    max-width: 300px;
+    height: 400px;
+}
+
+.evento .card-body {
+    border: 3px solid #2E0249;
     margin: 2rem 0.5rem 2rem 5rem;
     width: 400px;
     height: 400px;
@@ -202,18 +275,53 @@ button{
 
 /* ____________________________________stats_____________________ */
 
-th,tr,td{
+.tabla{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0 1rem 0;
+    min-height: 500px;
+}
+
+tr, td {
     border: 2px solid black;
     padding: 5px;
     height: 30px;
 }
 
-thead{
+.titulo_stat {
     background-color: #d90367a9;
+    width: 800px;
+    font-weight: bold;
 }
 
-section{
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
+
+/* _______________________mediaquery__________________________ */
+
+@media(max-width:768px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu_container {
+        flex-direction: column;
+    }
+
+    .menu_container ul {
+        flex-direction: column;
+    }
+
+
+    .card {
+        max-width: 100%;
+    }
+
+    .tarjetas {
+        margin: 0;
+        padding: 0;
+    }
+
 }
